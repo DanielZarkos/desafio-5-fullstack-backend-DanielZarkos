@@ -21,8 +21,8 @@ const ClientRegister = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     clientService.post(client).then((response) => {
-      console.log(response.data.)
-    } );
+      console.log(response.data);
+    });
     console.log(client);
   };
 
