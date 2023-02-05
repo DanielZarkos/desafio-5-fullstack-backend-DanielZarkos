@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./src",
+    "moduleResolution": "node",
     "paths": {
       "@/*": ["src/*"],
       "@services/*": ["src/services/*"],
-      "@models/*": ["src/models/*"]
+      "@models/*": ["src/models/*"],
+      "express": ["../node_modules/express/lib/express"]
     },
     "jsx": "react-jsx"
   },

@@ -1,6 +1,6 @@
 import { Route, Routes, Navigate } from "react-router-dom";
 import ClientRegister from "../pages/ClientRegister/ClientRegister";
-import ContactRegister from "../pages/ContactRegister/ContactRegister2";
+import ContactRegister from "../pages/ContactRegister/ContactRegister";
 
 const MainRoutes = () => {
   return (

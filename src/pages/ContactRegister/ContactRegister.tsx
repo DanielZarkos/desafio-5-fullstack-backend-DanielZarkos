@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { ContactService } from "@/services/Contacts";
-import { Contact } from "@/models";
+import Contact from "../../models/contact";
+import ContactService from "../../services/Contacts/contact.service";
 
 const ContactRegister = () => {
   const [contact, setContact] = useState<Contact>({
@@ -21,8 +21,8 @@ const ContactRegister = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     contactService.post(contact).then((response) => {
-      console.log(response.data.)
-    } );
+      console.log(response.data);
+    });
     console.log(contact);
   };
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { ClientService } from "@/services/Contacts";
-import { Client } from "@/models";
+import Client from "../../models/client";
+import ClientService from "../../services/Contacts/client.service";
 
 const ClientRegister = () => {
   const [client, setClient] = useState<Client>({

@@ -1,5 +1,5 @@
-import { ClientAPIService } from "@/services";
-import { Client } from "@/models";
+import ClientAPIService from "../../services/clientAPI.service";
+import Client from "../../models/client";
 import { AxiosResponse } from "axios";
 
 export default class ClientService {
