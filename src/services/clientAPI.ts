@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from "axios";
 
 function clientAPI(): AxiosInstance {
-  const baseURL = `localhost:8000/`;
+  const baseURL = `http://localhost:8000/`;
   const api = axios.create({ baseURL });
 
   return api;

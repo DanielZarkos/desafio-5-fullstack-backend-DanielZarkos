@@ -5,15 +5,15 @@ import { AxiosResponse } from "axios";
 export default class ContactService {
   public static baseEndpoint = "clients";
 
-  public async get(): Promise<AxiosResponse<Contact[]>> {
+  public async get(): Promise<AxiosResponse<Contact[]>> { //puxa informação
     return await ClientAPIService.get(ContactService.baseEndpoint);
   }
 
-  public async post(data: Contact): Promise<AxiosResponse<Contact>> {
+  public async post(data: Contact): Promise<AxiosResponse<Contact>> { //cria
     return await ClientAPIService.post(ContactService.baseEndpoint, data);
   }
 
-  public async put(data: Contact): Promise<AxiosResponse<Contact>> {
+  public async put(data: Contact): Promise<AxiosResponse<Contact>> { //sobrescreve
     return await ClientAPIService.put(ContactService.baseEndpoint, data);
   }
 
